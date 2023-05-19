@@ -23,6 +23,5 @@ Joypad
 ### Team:
 Name | Role
 ---|---
-Sesso Kosga | Developer
 
 
