@@ -10,7 +10,7 @@ Made for the [The GameDev.tv Game Jam 2023 - Free Course For All Submissions!](h
 
 ### Synopsis : 
 
-
+### Language : GDScript
 ### Enging : Godot 4
 
 ### Get on itch.io : 
