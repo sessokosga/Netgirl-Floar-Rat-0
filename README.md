@@ -24,7 +24,7 @@ Name | Role
 ---|---
 [Doc Quin](https://github.com/Doc-Quin) | Designer
 [DreamR7](https://github.com/DreamR7) | Graphic artist
-[Jarred Ruiz](https://github.com/Jarred-Ruiz) | Music compositor
+[Jarred Ruiz](https://github.com/Jarred-Ruiz) | Music composer
 [Megagravitizer](https://github.com/Megagravitizer) | Game writer
 [Sesso Kosga](https://github.com/sessokosga) | Developer
 
