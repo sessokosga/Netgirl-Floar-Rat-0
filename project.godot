@@ -27,6 +27,11 @@ editor/current_resources={}
 editor/last_resources=PackedStringArray("")
 editor/last/resources=[]
 
+[display]
+
+window/size/viewport_width=800
+window/size/viewport_height=600
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
