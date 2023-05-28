@@ -1,13 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://xnfd2m34vwtw"]
+[gd_scene load_steps=4 format=3 uid="uid://xnfd2m34vwtw"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_ihwpw"]
 [ext_resource type="PackedScene" uid="uid://bdvj5xutbxjv8" path="res://ui/home_ui.tscn" id="1_udum3"]
+[ext_resource type="PackedScene" uid="uid://duk7lcnhdcuav" path="res://credits_ui.tscn" id="3_5qso0"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ihwpw")
 
 [node name="HomeUI" parent="." instance=ExtResource("1_udum3")]
 
+[node name="CreditsUI" parent="." instance=ExtResource("3_5qso0")]
+
 [connection signal="credits" from="HomeUI" to="." method="_on_home_ui_credits"]
 [connection signal="quit" from="HomeUI" to="." method="_on_home_ui_quit"]
 [connection signal="start" from="HomeUI" to="." method="_on_home_ui_start"]
+[connection signal="back" from="CreditsUI" to="." method="show_menu"]

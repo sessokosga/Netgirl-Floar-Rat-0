@@ -1,7 +1,5 @@
 extends CanvasLayer
-signal start()
-signal credits()
-signal quit()
+signal back()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,13 +10,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func _on_start_pressed() -> void:
-	start.emit()
 
-
-func _on_credits_pressed() -> void:
-	credits.emit()
-
-
-func _on_quit_pressed() -> void:
-	quit.emit()
+func _on_back_pressed() -> void:
+	back.emit()
