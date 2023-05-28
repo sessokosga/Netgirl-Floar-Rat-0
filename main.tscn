@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://xnfd2m34vwtw"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_ihwpw"]
+[ext_resource type="PackedScene" uid="uid://bdvj5xutbxjv8" path="res://ui/home_ui.tscn" id="1_udum3"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_ihwpw")
+
+[node name="HomeUI" parent="." instance=ExtResource("1_udum3")]
+
+[connection signal="credits" from="HomeUI" to="." method="_on_home_ui_credits"]
+[connection signal="quit" from="HomeUI" to="." method="_on_home_ui_quit"]
+[connection signal="start" from="HomeUI" to="." method="_on_home_ui_start"]
