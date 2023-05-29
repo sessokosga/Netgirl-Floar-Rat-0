@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Point and click"
+config/name="Netgirl : Float Rat 0"
+config/description="A point and click adventure game made for Gamedev.tv game jam"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -27,8 +28,8 @@ editor/current_resources={
 "Character Editor": "res://npc/nobu.dch",
 "Timeline Editor": "res://dialogues/dialogue.dtl"
 }
-editor/last_resources=PackedStringArray("res://npc/robot.dch", "res://npc/player.dch", "res://dialogues/dialogue.dtl", "res://npc/victim.dch", "res://npc/mousekilled.dch", "res://npc/hacklogo.dch", "res://npc/nobu.dch", "")
-editor/last/resources=["res://npc/robot.dch", "res://npc/player.dch", "res://dialogues/dialogue.dtl", "res://npc/victim.dch", "res://npc/mousekilled.dch", "res://npc/hacklogo.dch"]
+editor/last_resources=PackedStringArray("res://npc/robot.dch", "res://npc/player.dch", "res://dialogues/dialogue.dtl", "res://npc/victim.dch", "res://npc/mousekilled.dch", "res://npc/hacklogo.dch", "res://npc/nobu.dch")
+editor/last/resources=["res://npc/robot.dch", "res://npc/player.dch", "res://dialogues/dialogue.dtl", "res://npc/victim.dch", "res://npc/mousekilled.dch", "res://npc/hacklogo.dch", "res://npc/nobu.dch"]
 layout/mode=0
 editor/visual_timeline_editor_sidebar=200.0
 editor/timeline_editor_mode=1

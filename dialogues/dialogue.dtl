@@ -1,6 +1,6 @@
 [background arg="res://images/city.png"]
 # [background arg="res://images/desk1.png"]
-[jump timeline="dialogue" label="start_maze"]
+# [jump timeline="dialogue" label="start_maze"]
 It’s midnight in New York. Somewhere in a basement, is a dark room filled with trash. \
 Nothing seems to be in place. The only light source in that room is from the multiple \
 monitor screens. There are diffeerent movie posters on the wall.

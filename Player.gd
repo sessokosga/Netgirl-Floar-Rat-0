@@ -29,7 +29,7 @@ func _process(delta: float) -> void:
 	
 	if has_overlapping_bodies():
 		position = old_position
-		player_end.emit(true)
+		player_end.emit(false)
 	
 	
 	
