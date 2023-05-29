@@ -1,6 +1,7 @@
 [background arg="res://images/city.png"]
+[music path="res://music/Jazz_VGM.mp3"]
 # [background arg="res://images/desk1.png"]
-# [jump timeline="dialogue" label="start_maze"]
+[jump timeline="dialogue" label="start_maze"]
 It’s midnight in New York. Somewhere in a basement, is a dark room filled with trash. \
 Nothing seems to be in place. The only light source in that room is from the multiple \
 monitor screens. There are diffeerent movie posters on the wall.
@@ -126,6 +127,7 @@ player: ...
 			Leave ratkiller
 			[label name="start_maze"]
 			[signal arg="start_maze"]
+			[music path="res://music/8-bit_VGM.mp3"]
 			# Maze solved
 			if {won} == "true":
 				nobu: Oh, thank you Zyphira! You are my true savior but I don’t have any money so here a candy

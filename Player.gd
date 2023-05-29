@@ -3,7 +3,7 @@ var velocity : Vector2
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	velocity = Vector2.ZERO
-@export var speed = 100
+@export var speed = 200
 var old_position : Vector2
 
 signal player_end(success:bool)
