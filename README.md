@@ -16,7 +16,7 @@ There is a news report coming in… “This just in Rat Killer has struck once a
 #### Language : GDScript
 #### Enging : Godot 4
 
-#### Get on itch.io : [https://sessokosga.itch.io/gamedev-mai-2023](https://sessokosga.itch.io/gamedev-mai-2023)
+#### Get on itch.io : [https://sessokosga.itch.io/netgirl](https://sessokosga.itch.io/netgirl)
 
 
 #### Controls :
