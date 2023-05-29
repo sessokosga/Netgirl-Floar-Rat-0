@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://xnfd2m34vwtw"]
+[gd_scene load_steps=6 format=3 uid="uid://xnfd2m34vwtw"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_ihwpw"]
 [ext_resource type="PackedScene" uid="uid://bdvj5xutbxjv8" path="res://ui/home_ui.tscn" id="1_udum3"]
+[ext_resource type="Texture2D" uid="uid://bi0l1kgcbla3m" path="res://images/back w.png" id="2_no2xt"]
 [ext_resource type="PackedScene" uid="uid://duk7lcnhdcuav" path="res://credits_ui.tscn" id="3_5qso0"]
 [ext_resource type="PackedScene" uid="uid://bpibgud5n3ys8" path="res://items/victim.tscn" id="4_3oprv"]
 
@@ -16,6 +17,13 @@ visible = false
 
 [node name="Victim" parent="." instance=ExtResource("4_3oprv")]
 visible = false
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = -63.0
+offset_right = 1023.0
+offset_bottom = 650.0
+texture = ExtResource("2_no2xt")
 
 [connection signal="credits" from="HomeUI" to="." method="_on_home_ui_credits"]
 [connection signal="quit" from="HomeUI" to="." method="_on_home_ui_quit"]

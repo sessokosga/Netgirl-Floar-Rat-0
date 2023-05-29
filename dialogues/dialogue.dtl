@@ -1,12 +1,13 @@
 [background arg="res://images/city.png"]
-[background arg="res://images/desk1.png"]
-[jump timeline="dialogue" label="show_victim_logo"]
+# [background arg="res://images/desk1.png"]
+# #[jump timeline="dialogue" label="rat_killer_show_up"]
 It’s midnight in New York. Somewhere in a basement, is a dark room filled with trash. \
 Nothing seems to be in place. The only light source in that room is from the multiple \
 monitor screens. There are diffeerent movie posters on the wall.
 There is a news report coming in… “This just in Rat Killer has struck once again. And this \
 time it’s a CEO of the Hiroshi Bank, Mr. Iwasumi Nobu. The police are trying their best in \
-the mansearch and manhunt of the Rat Killer. Reports say this is a work of a sick and \
+the mansearch and manhunt of the Rat Killer.
+Reports say this is a work of a sick and \
 twisted serial killer. If the reports are right, then he may have only 3 hours to live
 [background arg="res://images/desk1.png"]
 Zephira, a hacker is busy typing something on her keyboard. She chugs down a can of \
@@ -33,7 +34,8 @@ player: ...
 	player: But why the maze?
 	robot: Well, that’s because Rats are one of the most intelligent animals in New York right \
 	now. They have survived for so long; they have evolved to solve complex puzzles \
-	themselves. If you answer these questions, if he thinks they are moral enough, then he \
+	themselves.
+	robot: If you answer these questions, if he thinks they are moral enough, then he \
 	would release the map of the Underground maze and the location of the victim.
 	[jump timeline="dialogue" label="lets_hack"]
 - Tell me more about these serial killings?
@@ -52,12 +54,79 @@ player: ...
 	[label name="lets_hack"]
 	player: Alright Let’s hack
 	robot: You got it boss!
+	player: Bring up the victim’s file as well. Thank you.
 [label name="show_victim_logo"]
 [signal arg="show_victim_logo"]
-The Victim’s File reads as such: \
+robot: The Victim’s File reads as such\: \
 Name \: Iwasumi Nobu \
 Age \: 49 \
-Occupation \: CEO of Hiroshi Bank \
-Personality traits: Ambitious, Calculative, Uptight. \
-Family \: Wife and two children \
+Occupation \: CEO of Hiroshi Bank
+robot: Personality traits\: Ambitious, Calculative, Uptight. \
+Family \: Wife and two children
+robot: Bio\: Nobu is the CEO of Hiroshi Bank. He had humble beginnings. He was flat broke until \
+his former best friend Hirohito Katsuya planned to get out of poverty together.
+robot: They opened a bank 10 years later. This bank was made especially made for people who suffeered\
+like them.
+robot: Due to unknown circumstances, Katsuya was put in jail for scamming although he tried to\
+show all evidence that would otherwise would say he was innocent. There is a higher hand\
+at play.
+robot: But this hand had brought great shame to the family of Hirihito who have\
+committeed mass disembowelment except Katsuya who is currently inside.
 [signal arg="hide_victim_logo"]
+Leave robot
+[label name="rat_killer_show_up"]
+Join ratkiller 3
+ratkiller: Why did the rat get promoted at the big bank with big fat pants?
+player: ...
+- Is it because he wanted to become rich?
+	player: Is it because he wanted to become rich?
+	player: ...
+	- Did Nobu betray his friend on counts of honesty?
+		player: Did Nobu betray his friend on counts of honesty?
+		ratkiller: You are wrong he is not right..
+		ratkiller: Try again\
+		you have 2 more chances...
+		[signal arg="lost_trial"]
+		[jump timeline="dialogue" label="rat_killer_show_up"]
+	- Did Nobu betray his friend on counts of greediness?
+		player: Did Nobu betray his friend on counts of greediness?
+		[jump timeline="dialogue" label="option_C"]
+- Because he was greedy?
+	player: Because he was greedy?
+[label name="option_C"]
+ratkiller: Is cheating with your friend for money wrong?
+player: ...
+- Yes
+	player: Yes
+	ratkiller: why did he snitch on his friends knowing very well you both are in this together?
+	player: ...
+	- Money blindness?
+		player: Money blindness?
+		ratkiller: You are indeed true! It was indeed money blindness. It was betrayal of the\
+		biggest order and he snitched and made up lies about his childhood friend for a thing that\
+		might not even follow him inside his casket. And yet… He chose money over soul.
+		ratkiller: And don’t you think this soul should die?
+		player: ...
+		- Yes
+			player: Yes
+			ratkiller: You still think money is more important than the people who are important\
+			to you? That’s it I have had it with you and he is going to die this this instant.
+			Nobu dies instantly and he will move on the next victim
+			Then game over…
+			[wait time="1.0"]
+			[signal arg="game_lost"]			
+			[end_timeline]
+		- No
+			player: No
+			ratkiller: you are right he does deserve to die… But let me see will win… His money\
+			or his friend… I will send you and his friend a map of the underground maze and you are\
+			all rats who will have to search around the map to find him.
+			ratkiller: If you win, you will get his riches as he has promised and a clue to a piece of \
+			my location or his friend who will show the true value of friendship?
+	- He turned into a new leaf?
+		player: He turned into a new leaf?
+		ratkiller: You are wrong he is not right...
+		ratkiller: Try again it’s your last chance
+- No
+	player: No
+[wait time="1.0"]

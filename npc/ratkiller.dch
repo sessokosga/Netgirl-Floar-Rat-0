@@ -8,16 +8,16 @@
 "style": ""
 },
 "default_portrait": "default",
-"description": "A hacker girl, resolving crimes with his computer",
-"display_name": "Zephira",
+"description": "",
+"display_name": "Rat Killer",
 "mirror": false,
-"nicknames": ["player"],
+"nicknames": ["ratkiller"],
 "offset": Vector2(0, 0),
 "portraits": {
 "default": {
-"image": "res://images/profile.png",
+"image": "res://images/Rat-killer.png",
 "mirror": true,
-"offset": Vector2(0, 0),
+"offset": Vector2(0, -80),
 "scale": 0.3,
 "scene": ""
 }

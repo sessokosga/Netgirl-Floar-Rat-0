@@ -9,9 +9,9 @@ script = ExtResource("1_bxpfp")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -62.0
+offset_left = 140.0
 offset_top = 24.0
-offset_right = 62.0
+offset_right = 276.0
 offset_bottom = 83.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 40
@@ -25,9 +25,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -190.5
+offset_left = 9.5
 offset_top = -171.0
-offset_right = 190.5
+offset_right = 390.5
 offset_bottom = 171.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -41,6 +41,7 @@ Graphics : DreamR7
 Design : Doc-Quin
 
 Development : Sesso Kosga"
+horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="Back" type="Button" parent="."]
@@ -49,10 +50,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -146.0
-offset_top = -110.0
-offset_right = 32.0
-offset_bottom = -56.0
+offset_left = 134.0
+offset_top = -94.0
+offset_right = 312.0
+offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 30

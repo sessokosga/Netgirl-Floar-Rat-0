@@ -27,8 +27,8 @@ editor/current_resources={
 "Character Editor": "res://npc/mousekilled.dch",
 "Timeline Editor": "res://dialogues/dialogue.dtl"
 }
-editor/last_resources=PackedStringArray("res://npc/robot.dch", "res://npc/player.dch", "res://npc/timeline.dtl", "res://dialogues/dialogue.dtl", "res://npc/victim.dch", "res://npc/mousekilled.dch", "res://npc/hacklogo.dch")
-editor/last/resources=[]
+editor/last_resources=PackedStringArray("res://npc/robot.dch", "res://npc/player.dch", "res://dialogues/dialogue.dtl", "res://npc/victim.dch", "res://npc/mousekilled.dch", "res://npc/hacklogo.dch")
+editor/last/resources=["res://npc/robot.dch", "res://npc/player.dch", "res://dialogues/dialogue.dtl", "res://npc/victim.dch", "res://npc/mousekilled.dch", "res://npc/hacklogo.dch"]
 layout/mode=0
 editor/visual_timeline_editor_sidebar=200.0
 editor/timeline_editor_mode=1
