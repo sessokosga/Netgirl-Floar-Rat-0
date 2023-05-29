@@ -61,19 +61,16 @@ func init() -> void:
 	# Create/Reset all the tables
 	grid = {}
 	# Fit to screen size	
-	nbcol = floor(screen_size.x/cs)
-	if nbcol % 2 == 0 :
-		nbcol = nbcol-1
-	nblig = floor(screen_size.y/cs)
-	if nblig % 2 == 0 :
-		nblig = nblig-1
+	nbcol = 20
+	nblig = 20
+	
 	# Fill with walls
 	for l in range(nblig):
 		grid[l] = {}
 		for c in range(nbcol) :
 			grid[l][c] = "wall"
 	# Explore from the upper-left corner
-	explore(2,2)
+	explore(1,1)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -90,8 +87,11 @@ func _draw() -> void:
 		for c in range(nbcol) :
 			var cell = grid[l][c]
 			if cell != "wall" :
+				draw_rect(Rect2(cs*c,cs*l,cs,cs),Color8(0,50,0),true)
+			else :
 				draw_rect(Rect2(cs*c,cs*l,cs,cs),Color8(150,150,150),true)
+			
 			if bLines :
-				draw_rect(Rect2(cs*c,cs*l,cs*c,cs*nblig),Color8(50,50,50),true)
+				pass#draw_rect(Rect2(cs*c,cs*l,cs*c,cs*nblig),Color8(50,50,50),true)
 		if bLines :
 			draw_rect(Rect2(0,cs*l,cs*nbcol,cs*l),Color8(50,50,50),true)

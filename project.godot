@@ -21,16 +21,23 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 
 [dialogic]
 
-editor/character_preview_mode=0
-editor/current_editor=&"HomePage"
-editor/current_resources={}
-editor/last_resources=PackedStringArray("")
+editor/character_preview_mode=1
+editor/current_editor=&"Timeline Editor"
+editor/current_resources={
+"Character Editor": "res://npc/player.dch",
+"Timeline Editor": "res://dialogues/dialogue.dtl"
+}
+editor/last_resources=PackedStringArray("res://npc/robot.dch", "res://npc/player.dch", "res://npc/timeline.dtl", "res://dialogues/dialogue.dtl", "")
 editor/last/resources=[]
+layout/mode=0
+editor/visual_timeline_editor_sidebar=200.0
+editor/timeline_editor_mode=1
+editor/current_timeline_path="res://dialogues/dialogue.dtl"
 
 [display]
 
-window/size/viewport_width=800
-window/size/viewport_height=600
+window/size/viewport_width=1024
+window/size/viewport_height=576
 
 [editor_plugins]
 
