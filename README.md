@@ -1,4 +1,4 @@
-## Adventure game
+## Netgirl : Floar Rat 0
 
 
 Made for the [The GameDev.tv Game Jam 2023 - Free Course For All Submissions!](https://itch.io/jam/gamedevtv-jam-2023)
@@ -9,6 +9,9 @@ Made for the [The GameDev.tv Game Jam 2023 - Free Course For All Submissions!](h
 
 
 #### Synopsis : 
+It’s midnight in New York. Somewhere in a basement, is a dark room filled with trash. Nothing seems to be in place. The only light source in that room is from the multiple monitor screens. There are different movie posters on the wall.
+
+There is a news report coming in… “This just in Rat Killer has struck once again. And this time it’s a CEO of the Hiroshi Bank, Mr. Iwasumi Nobu. The police are trying their best in the mansearch and manhunt of the Rat Killer. Reports say this is a work of a sick and twisted serial killer. If the reports are right, then he may have only 3 hours to live.
 
 #### Language : GDScript
 #### Enging : Godot 4
