@@ -1,6 +1,6 @@
 [background arg="res://images/city.png"]
 # [background arg="res://images/desk1.png"]
-# #[jump timeline="dialogue" label="rat_killer_show_up"]
+[jump timeline="dialogue" label="start_maze"]
 It’s midnight in New York. Somewhere in a basement, is a dark room filled with trash. \
 Nothing seems to be in place. The only light source in that room is from the multiple \
 monitor screens. There are diffeerent movie posters on the wall.
@@ -113,8 +113,8 @@ player: ...
 			to you? That’s it I have had it with you and he is going to die this this instant.
 			Nobu dies instantly and he will move on the next victim
 			Then game over…
-			[wait time="1.0"]
-			[signal arg="game_lost"]			
+			[signal arg="game_lost"]
+			[wait]
 			[end_timeline]
 		- No
 			player: No
@@ -123,10 +123,37 @@ player: ...
 			all rats who will have to search around the map to find him.
 			ratkiller: If you win, you will get his riches as he has promised and a clue to a piece of \
 			my location or his friend who will show the true value of friendship?
+			Leave ratkiller
+			[label name="start_maze"]
+			[signal arg="start_maze"]
+			# Maze solved
+			if {won} == "true":
+				nobu: Oh, thank you Zyphira! You are my true savior but I don’t have any money so here a candy
+				player: Are you serious right now?
+				Join ratkiller 3
+				ratkiller: Congratulations! You have solved this maze… you smart rat! Here is the two words of my location\: S and T good luck with the next victim… And just so you know Nobu, you friend tried to escape the prison and has died trying to save you. Poor soul.
+				ratkiller: S T _ A T_ _ _ _ _ A _ _\
+				S T A T _ _ _ _ _ _ _ T _
+				nobu: You idiot! I will find you no matteer how much MONEY it takes and I swear this on\
+				my ancestor Oda! And you! You will not get squat now!
+				player: What did I do wrong? I just saved you!
+				nobu: good bye
+				[wait]
+				[end_timeline]
+			# Not solved
+			if {failed} == "true":
+				Nobu died
+				ratkiller: Poor rat… you’re still a baby. Don’t worry… I will still give you one letteer to my
+				location. It is “S” and I hope you can find me soon Zephira!! AHahahaa
+				ratkiller: S _ _ A _ _ _ _ _ _ A _ _\
+				S _ A _ _ _ _ _ _ _ _ _ _
+				[wait]
+				[end_timeline]
 	- He turned into a new leaf?
 		player: He turned into a new leaf?
 		ratkiller: You are wrong he is not right...
 		ratkiller: Try again it’s your last chance
 - No
 	player: No
-[wait time="1.0"]
+[wait]
+

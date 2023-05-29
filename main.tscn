@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://xnfd2m34vwtw"]
+[gd_scene load_steps=8 format=3 uid="uid://xnfd2m34vwtw"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_ihwpw"]
 [ext_resource type="PackedScene" uid="uid://bdvj5xutbxjv8" path="res://ui/home_ui.tscn" id="1_udum3"]
 [ext_resource type="Texture2D" uid="uid://bi0l1kgcbla3m" path="res://images/back w.png" id="2_no2xt"]
 [ext_resource type="PackedScene" uid="uid://duk7lcnhdcuav" path="res://credits_ui.tscn" id="3_5qso0"]
 [ext_resource type="PackedScene" uid="uid://bpibgud5n3ys8" path="res://items/victim.tscn" id="4_3oprv"]
+[ext_resource type="Texture2D" uid="uid://doaf2huocrtdx" path="res://images/hacklogo.png" id="6_6xuuj"]
+[ext_resource type="PackedScene" uid="uid://bjiw4ukyfgxa5" path="res://maze.tscn" id="7_2tgmq"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_ihwpw")
@@ -25,7 +27,21 @@ offset_right = 1023.0
 offset_bottom = 650.0
 texture = ExtResource("2_no2xt")
 
+[node name="HackButton" type="TextureButton" parent="."]
+visible = false
+offset_left = 409.0
+offset_top = 24.0
+offset_right = 1049.0
+offset_bottom = 664.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("6_6xuuj")
+
+[node name="Maze" parent="." instance=ExtResource("7_2tgmq")]
+visible = false
+
 [connection signal="credits" from="HomeUI" to="." method="_on_home_ui_credits"]
 [connection signal="quit" from="HomeUI" to="." method="_on_home_ui_quit"]
 [connection signal="start" from="HomeUI" to="." method="_on_home_ui_start"]
 [connection signal="back" from="CreditsUI" to="." method="show_menu"]
+[connection signal="pressed" from="HackButton" to="." method="_on_hack_button_pressed"]
+[connection signal="maze_result" from="Maze" to="." method="_on_maze_maze_result"]

@@ -41,3 +41,29 @@ func handle_dialogue_signal(event_name:String) -> void:
 			$Victim.show()
 		"hide_victim_logo":
 			$Victim.hide()
+		"start_maze":
+			show_maze()
+			Dialogic.paused = true
+			
+
+func show_maze() -> void:
+	$Maze.show()
+	$Background.hide()
+	$HomeUI.hide()
+	$CreditsUI.hide()
+
+func hide_maze() -> void:
+	Dialogic.paused = false
+	$Maze.hide()
+	
+func _on_hack_button_pressed() -> void:
+	print("Hackk")
+	$HackButton.hide()
+	show_maze()
+
+func _on_maze_maze_result(success) -> void:
+	hide_maze()
+	if success : 
+		Dialogic.VAR.won = "true"
+	else:
+		Dialogic.VAR.failed = "true"
