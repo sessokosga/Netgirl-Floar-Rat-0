@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpibgud5n3ys8"]
+
+[ext_resource type="Script" path="res://items/victim.gd" id="1_44gjf"]
+[ext_resource type="Texture2D" uid="uid://crg4xlt6owgom" path="res://images/victimfile.png" id="2_l4l7v"]
+[ext_resource type="Script" path="res://items/body.gd" id="2_ogxv3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6r78u"]
+size = Vector2(115, 138)
+
+[node name="Victim" type="CanvasLayer"]
+script = ExtResource("1_44gjf")
+
+[node name="body" type="StaticBody2D" parent="."]
+position = Vector2(479, 118)
+script = ExtResource("2_ogxv3")
+metadata/_edit_group_ = true
+
+[node name="victim" type="Sprite2D" parent="body"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_l4l7v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="body"]
+position = Vector2(2.5, -5)
+shape = SubResource("RectangleShape2D_6r78u")
+
+[connection signal="input_event" from="body" to="body" method="_on_input_event"]

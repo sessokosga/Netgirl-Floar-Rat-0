@@ -1,24 +1,24 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-"color": Color(0.286275, 0.298039, 0.392157, 1),
+"color": Color(1, 1, 1, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
 "style": ""
 },
 "default_portrait": "default",
-"description": "AI robot helping the player",
-"display_name": "AI",
+"description": "",
+"display_name": "hacklogo",
 "mirror": false,
-"nicknames": ["robot"],
+"nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
 "default": {
-"image": "res://images/ai robot copy.png",
+"image": "res://images/hacklogo.png",
 "mirror": false,
-"offset": Vector2(0, -30),
-"scale": 0.18,
+"offset": Vector2(0, 0),
+"scale": 0.2,
 "scene": ""
 }
 },

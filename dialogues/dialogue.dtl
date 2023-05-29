@@ -1,4 +1,6 @@
 [background arg="res://images/city.png"]
+[background arg="res://images/desk1.png"]
+[jump timeline="dialogue" label="show_victim_logo"]
 It’s midnight in New York. Somewhere in a basement, is a dark room filled with trash. \
 Nothing seems to be in place. The only light source in that room is from the multiple \
 monitor screens. There are diffeerent movie posters on the wall.
@@ -6,6 +8,56 @@ There is a news report coming in… “This just in Rat Killer has struck once a
 time it’s a CEO of the Hiroshi Bank, Mr. Iwasumi Nobu. The police are trying their best in \
 the mansearch and manhunt of the Rat Killer. Reports say this is a work of a sick and \
 twisted serial killer. If the reports are right, then he may have only 3 hours to live
-
-Helio
-
+[background arg="res://images/desk1.png"]
+Zephira, a hacker is busy typing something on her keyboard. She chugs down a can of \
+redbull. She seems to be sweating and panting. She is out of breath. She tries to take a \
+pause. An AI on screen pops up…
+Join robot 3
+robot: hey! You all right there, girl?
+Join player 1
+player: Yeah, Im fine… My fingers hurt due to constant typing.
+robot: We are almost there. If we bypass this firewall, then we can finally find the way to save \
+that man. Get back to work soon.
+robot: You should go out more and not chug this Redbull from the can! If you are going drink \
+it at least let a guy buy it for you!
+player: It’s too boring to be in a *face to face* environment. I prefer the *Work on face* \
+instead.
+robot: it is as though your life is like a 2D game?!
+player: I rather be in 2D than 3D…. It’s 98% done… But I don’t get why the Rat killer has \
+done a maze to solve to all his puzzles.
+robot: Well… According to him, he believes the Rats of this world have more the than these \
+Rat humans who whistle blow or tell on their friends for their profit.
+[label name="first_choice"]
+player: ...
+- But why the maze ?
+	player: But why the maze?
+	robot: Well, that’s because Rats are one of the most intelligent animals in New York right \
+	now. They have survived for so long; they have evolved to solve complex puzzles \
+	themselves. If you answer these questions, if he thinks they are moral enough, then he \
+	would release the map of the Underground maze and the location of the victim.
+	[jump timeline="dialogue" label="lets_hack"]
+- Tell me more about these serial killings?
+	player: Tell me more about these serial killings?
+	robot: The killings started 2 years ago, or so we think… It might have started earlier but it \
+	blew up when the Ex-Mayor of this city died a brutal death. The deaths have the same \
+	autopsy. The rats have been trained to enter the body of the humans and kill them from \
+	inside while move around the body like a maze. The worst part, there is no alibi, no \
+	witnesses or any camera footage to know how they were kidnapped or who kidnapped \
+	them.
+	player: Any leads on the serial killer suspects?
+	robot: as of now there is no chatteer of who he is or where he came from… unfortunately. \
+	Any other questions?
+	[jump timeline="dialogue" label="lets_hack"]
+- Alright Let’s hack
+	[label name="lets_hack"]
+	player: Alright Let’s hack
+	robot: You got it boss!
+[label name="show_victim_logo"]
+[signal arg="show_victim_logo"]
+The Victim’s File reads as such: \
+Name \: Iwasumi Nobu \
+Age \: 49 \
+Occupation \: CEO of Hiroshi Bank \
+Personality traits: Ambitious, Calculative, Uptight. \
+Family \: Wife and two children \
+[signal arg="hide_victim_logo"]

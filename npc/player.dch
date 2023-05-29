@@ -9,16 +9,16 @@
 },
 "default_portrait": "default",
 "description": "A hacker girl, resolving crimes with his computer",
-"display_name": "player",
+"display_name": "Zephira",
 "mirror": false,
-"nicknames": [""],
+"nicknames": ["player"],
 "offset": Vector2(0, 0),
 "portraits": {
 "default": {
 "image": "res://images/profile.png",
 "mirror": false,
 "offset": Vector2(0, 0),
-"scale": 0.1,
+"scale": 0.3,
 "scene": ""
 }
 },
