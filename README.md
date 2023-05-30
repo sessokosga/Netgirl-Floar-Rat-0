@@ -1,4 +1,4 @@
-## Netgirl : Float Rat 0
+## Netgirl : Floar Rat 0
 
 
 Made for the [The GameDev.tv Game Jam 2023 - Free Course For All Submissions!](https://itch.io/jam/gamedevtv-jam-2023)
